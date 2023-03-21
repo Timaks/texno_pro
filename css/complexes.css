@@ -1,0 +1,60 @@
+@import url(stage-pages.css);
+
+.technologies{
+    flex: 0 0 32%;
+}
+@media(max-width: 991px)
+{
+    .technologies{
+        flex: 0 0 48%;
+    }
+}
+@media(max-width: 550px){
+    .technologies{
+        flex: 0 0 100%;
+    }
+}
+.complex-container{
+    display: flex;
+}
+.complex-text{
+    font-size: 16px;
+    padding-left: 15px;
+    text-indent: 1rem;
+    margin: 0px 0px 7px 0px;
+    padding-top: 25px;
+}
+.complex-type{
+    display: flex;
+    flex: 1 1 100%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    font-size: 16px;
+}
+.complex-list{
+    padding: 0 40px;
+    margin: 7px 0;
+}
+.complex-list__item::before{
+    content: '✔';
+    padding-right: 5px;
+}
+.equipment__img {
+    border-radius: 15%;
+  }
+@media (max-width: 1200px){
+    .complex-text, .complex-type{
+        font-size: 14px;
+    }
+    .complex-text{
+        padding-top: 0;
+    }
+}
+@media (max-width: 991px){
+.complex-text{
+    padding-left: 0px;
+}
+.complex-list {
+    padding: 0 10px;
+  }
+}

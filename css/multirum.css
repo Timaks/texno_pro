@@ -1,0 +1,74 @@
+@import url(stage-pages.css);
+
+
+.multirum{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-top: 10px;
+    gap: 30px;
+    font-size: 16px;
+}
+.multirum_text {
+    max-width: 55%;
+    padding: 0 30px;
+    line-height: 35px;
+    text-align: center;
+  }
+  .multirum__img {
+    border-radius: 10%;
+    border-radius: 100px 0px 100px 0px;
+  }  
+
+hr {
+    border: none;
+    height: 3px;
+    margin-top: 40px;
+    background-image: linear-gradient(to right, #FFF, #BFE2FF, #FFF);
+}
+hr:before,
+hr:after {
+    content: '';
+    display: inline-block;
+    border-radius: 100%;
+    width: 40px;
+    height: 40px;
+    border: 2px solid #BFE2FF;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #FFF;
+}
+hr:after {
+    animation: anim-hr 1s linear infinite;
+}
+@keyframes anim-hr {
+    0% {
+        width: 40px;
+        height: 40px;
+    }
+    100% {
+        width: 0;
+        height: 0;
+    }
+}
+
+
+  @media (max-width: 991px){
+    .multirum {
+        flex-direction: column;
+        font-size: 14px;
+    }
+    .multirum_text{
+        max-width: 100%;
+        text-align:left;
+        line-height: 25px;
+        padding: 0 10px;
+    }
+    .block-equipment {
+        padding-top: 0px;
+    }
+    hr{
+        margin-bottom: 20px;
+    }
+}

@@ -1,0 +1,16 @@
+@import url(stage-pages.css);
+
+.technologies{
+    flex: 0 0 32%;
+}
+@media(max-width: 991px)
+{
+    .technologies{
+        flex: 0 0 48%;
+    }
+}
+@media(max-width: 550px){
+    .technologies{
+        flex: 0 0 100%;
+    }
+}

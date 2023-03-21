@@ -1,0 +1,32 @@
+@import url(stage-pages.css);
+
+.technologies{
+    flex: 0 0 32%;
+}
+@media(max-width: 991px)
+{
+    .technologies{
+        flex: 0 0 48%;
+    }
+}
+@media(max-width: 550px){
+    .technologies{
+        flex: 0 0 100%;
+    }
+}
+.industry-right {
+    padding-bottom: 0px;
+}
+.cinema-list{
+    font-size: 16px;
+}
+.cinema-list__item::before{
+    content: '✔';
+    padding-right: 5px;
+}
+@media (max-width: 1200px) {
+    .cinema-list{
+        font-size: 14px;
+        margin: 0px;
+    }
+}
