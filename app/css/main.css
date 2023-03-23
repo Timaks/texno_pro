@@ -3,7 +3,7 @@
 
 /*second-block*/
 .second-block{
-    background: url(/img/main_page/main_image.jpg);
+    background: url(/app/img/main_page/main_image.jpg);
     height: 900px;
     background-position: center;
     background-repeat: no-repeat;
